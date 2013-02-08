@@ -6,10 +6,6 @@ from sensible import *
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-ADMINS = (
-    ('Jorge Luis Hernandez', 'lesthack@gmail.com'),
-)
-
 MANAGERS = ADMINS
 
 # Local time zone for this installation. Choices can be found here:
@@ -74,9 +70,6 @@ STATICFILES_FINDERS = (
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
-# Make this unique, and don't share it with anybody.
-SECRET_KEY = 'v@t2ngjjlrb&ct5fubk28t4@8a28v+mcghgj040*u+k$kfth30'
-
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
@@ -110,6 +103,7 @@ INSTALLED_APPS = (
     'django.contrib.humanize',
     'icoder_name.subscriber',
     'icoder_name.root',
+    'django_extensions',
 )
 
 # Auth profile
