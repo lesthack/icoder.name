@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %} Subscribe {% endblock %}
+
+{% block content %}
+    <pre id="code">
+        <span class="word_reserved">def</span> <span class="function">render</span>(<span class="object">self</span>):
+            <span class="word_reserved">if</span>(<span class="object">self</span>.coder):
+                <span class="object">self</span>.profile = icoder.name
+                <span class="word_reserved">return</span> <span class="object">self</span>
+            <span class="word_reserved">else</span>:
+                knowledge = [logic, languages, caffeine]
+                <span class="word_reserved">for</span> some <span class="word_reserved">in</span> knowledge:
+                    <span class="object">self</span>.learn(some)
+                <span class="word_reserved">return</span> <span class="function">render</span>(<span class="object">self</span>)
+    </pre>
+    <form action="/subscriber/add/" method="POST" name="suscription" id="suscription">
+        {% csrf_token %}
+        {{ form_person.email }}
+        <span class='description'>{{ form_person.email.errors }}</span>
+    </form>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#id_email").focus();
+        });
+    </script>
+{% endblock %}

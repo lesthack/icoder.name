@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    background: #000 url('/media/subscriber/background.png') ;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+}
+footer{
+    margin: auto;
+    width: 1024px;
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+}
+footer a{
+    color: #999;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    font-weight: bold;
+}
+footer a:hover{
+    color: #FFF;
+}
+#root{
+    width: 1024px;
+    height: 400px;
+    margin: auto;
+    padding-top: 150px;
+    text-align: right;
+    /*background: url('/media/subscriber/code.png') no-repeat left center;*/
+}
+#code{
+    margin-top: 10px;
+    margin-left: -50px;
+    float: left;
+    color: white;
+    width: 500px;
+    text-align: left;
+    font-size: 15px;
+    text-shadow: 0 0 0.2em #999;
+}
+#name_site{
+    color: #FFF;
+    text-shadow: #666 3px 2px 0px;
+    font-size: 50px;
+}
+form[name="suscription"]{
+    float: right;
+    height: 70px;
+    width: 450px;
+    background: transparent url('/media/subscriber/email.png') no-repeat 0% 0%;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+form label{
+    color: #FFF;
+    height: 40px;
+    display: inline;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 2px 10px;
+}
+form input[type="email"]{
+    height: 40px;
+    border: 1px solid #707881;
+    display: inline;
+    font-size: 20px;
+    padding: 2px 10px;
+    border-radius: 6px;
+    background: #FFF;
+}
+form input[type="email"]:focus{
+    background: #FFF;
+    border: 1px solid #707881;
+}
+form input[name="email"]{
+    width: 250px;
+    text-align: center;
+}
+form span.description{
+    display: block;
+    color: white;
+    font-size: 12px;
+    margin-top: 12px;
+}
+form span.description ul{
+    list-style-image: none;
+    list-style-type: none;
+}
+form button{
+    height: 40px;
+    display: inline;
+    font-size: 20px;
+    padding: 2px 10px;
+}
+#yourwelcome{
+    width: 900px;
+    margin: auto;
+    color: white;
+}
+#yourwelcome h1, #yourwelcome h2{
+    text-align: center;
+    text-shadow: 0 0 0.2em #999;
+}
+#yourwelcome h1{
+    font-size: 50px;
+}
+
+.word_reserved{
+    color: red;
+}
+.function{
+    color: #46b854;
+}
+.object{
+    color: #1eaec5;
+}
