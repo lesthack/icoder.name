@@ -112,7 +112,30 @@ form button{
 #yourwelcome h1{
     font-size: 50px;
 }
-
+#about{
+    text-align: left;
+    color: white;
+}
+#about h1{
+    font-size: 50px;
+    text-shadow: 0 0 0.2em #999;
+}
+#about h2{
+    font-size: 20px;
+    text-shadow: 0 0 0.2em #999;
+}
+#apps_banner{
+    width: 600px;
+    margin: 15px;
+    padding: 5px;
+    background: white;
+    border-radius: 6px;
+}
+#apps_banner img{
+    height: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
 .word_reserved{
     color: red;
 }
