@@ -136,6 +136,25 @@ form button{
     margin-right: 5px;
     margin-left: 5px;
 }
+#error{
+    text-align: left;
+    color: white;
+}
+#error h1.error_code{
+    font-size: 120px;
+    letter-spacing: -10px;
+    text-shadow: 0 0 0.2em #999;
+}
+#error h1.error_code span{
+    font-size: 90px;
+}
+#error h2.error_description{
+    font-size: 40px;
+    text-shadow: 0 0 0.2em #999;
+    color: #1eaec5;
+    margin-left: 15px;
+    line-height: 20px;
+}
 .word_reserved{
     color: red;
 }

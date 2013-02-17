@@ -3,7 +3,7 @@
 import os.path
 from sensible import *
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 MANAGERS = ADMINS
@@ -104,6 +104,7 @@ INSTALLED_APPS = (
     'icoder_name.subscriber',
     'icoder_name.root',
     'django_extensions',
+    'django_crontab',
 )
 
 # Auth profile
@@ -112,6 +113,11 @@ AUTH_PROFILE_MODULE = 'preventa.perfil'
 # Session configuration
 SESSION_COOKIE_AGE = 14400
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+# Cronjobs
+CRONJOBS = [
+    ('* * * * *', 'icoder_name.subscriber.cron.my_scheduled_job')
+]
 
 # Context Procesosors
 TEMPLATE_CONTEXT_PROCESSORS = (
