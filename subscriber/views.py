@@ -4,12 +4,13 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 from django.views.decorators.csrf import csrf_protect
+from django.views.decorators.cache import cache_page
 from subscriber.models import *
 from subscriber.forms import *
 
 @csrf_protect
+@cache_page(60 * 60)
 def index(request):
-
     form_person = personForm()
 
     return render_to_response('index.html', {
@@ -19,7 +20,6 @@ def index(request):
 
 @csrf_protect
 def add(request):
-
     if request.method == 'POST':
         form_person = personForm(request.POST)
 
@@ -41,5 +41,6 @@ def add(request):
         },
     context_instance=RequestContext(request))
 
+@cache_page(60 * 60)
 def about(request):
     return render_to_response('about.html', {}, context_instance=RequestContext(request))
